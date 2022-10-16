@@ -19,7 +19,6 @@ const { NotImplementedError } = require('../extensions/index.js');
       for (let j = i; j < str.length; j++){
         if (str[i] == str[j]){
           count++
-          console.log (count)
         } else {
           break
         }

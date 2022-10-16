@@ -15,7 +15,6 @@ const { NotImplementedError } = require('../extensions/index.js');
   let a = '' + n
   let res = ''
   let Arr = []
-  // console.log(a)
   for (let i = 0; i < a.length; i++){
       for (let j = 0; j < a.length; j++){
         if (i !== j){
@@ -24,7 +23,6 @@ const { NotImplementedError } = require('../extensions/index.js');
 
       }
       Arr.push(+res)
-      // console.log(Arr)
       res =''
   }
   Arr.sort((a,b)=>(b-a))

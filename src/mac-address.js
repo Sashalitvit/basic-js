@@ -15,8 +15,10 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
  function isMAC48Address(n) {
+  // console.log(n)
   let control = '0123456789ABCDEF'
 let arr = String(n).split('-')
+// console.log(arr)
 if (arr.length !==6 || !Array.isArray(arr)){
   return false
 }
@@ -27,7 +29,8 @@ for (let i = 0; i < arr.length; i++){
     return false
   }
 }
-return true
+return true}
+
 module.exports = {
   isMAC48Address
 };

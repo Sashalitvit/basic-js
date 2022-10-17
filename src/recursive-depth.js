@@ -12,23 +12,4 @@ const { NotImplementedError } = require('../extensions/index.js');
  * depthCalc.calculateDepth([[[]]]) => 3
  *
  */
- console.log(arr)
- let count = 1
- let res = arr.reduce((acc,el)=>{
-     if(Array.isArray(el)){
-         console.log('el = ' + el)
-         el.forEach(e =>{
-             console.log('e = ' + e)
-             acc.push(e)
-         })
 
-     }
-     console.log('acc = ' + acc)
-    return acc
- },[])
- console.log(res)
- console.log(Boolean(...res))
- return (Boolean(...res)) ?  count + calculateDepth(res): count
-module.exports = {
-  DepthCalculator
-};
